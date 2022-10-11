@@ -3,7 +3,7 @@
 namespace ShopApp1.Controllers
 {
     [ApiController]
-    [Route("shopapp1/[controller]")]
+    [Route("api/[controller]")]
     public class BaseApiController : ControllerBase
     {
 

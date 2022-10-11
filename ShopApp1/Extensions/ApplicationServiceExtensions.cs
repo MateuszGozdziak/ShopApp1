@@ -14,7 +14,8 @@ namespace ShopApp1.Extensions
             services.AddScoped<ITokenService, TokenService>();
             services.AddDbContext<DataContext>(options =>
             {
-                options.UseSqlite(config.GetConnectionString("DefaultConnection")); //UseSqlServer
+                options.UseSqlServer(config.GetConnectionString("DefaultConnection"));
+                //options.UseSqlite(config.GetConnectionString("DefaultConnection")); //UseSqlServer
             });
             
             return services;
